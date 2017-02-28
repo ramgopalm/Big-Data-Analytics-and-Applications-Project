@@ -1,0 +1,4 @@
+C:\Users\Ramgopal\Documents\Course Works\Thesis docs\Origami\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x64
+C:\Users\Ramgopal\Documents\Course Works\Thesis docs\Origami\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x64
+C:\Users\Ramgopal\Documents\Course Works\Thesis docs\Origami\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x64
+C:\Users\Ramgopal\Documents\Course Works\Thesis docs\Origami\App\Origami\Origami.csproj;x64
