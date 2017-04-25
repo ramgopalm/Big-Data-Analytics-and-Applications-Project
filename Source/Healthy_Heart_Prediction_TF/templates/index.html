@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Image classification example</title>
+    <!-- jQuery -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/thumbnail-gallery.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">Tensorflow - Healthy Heart Prediction </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>-->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 class="page-header">Healthy Heart Prediction</h1>
+            </div>
+            <div class="row inputRow">
+
+
+
+                <div class="col-md-4">
+                    <h3 id="txt_area_2"> </h3>
+                    Age: <input type="text" name="ip1" id="ip1"/><br>
+                    Sex:<input type="text" name="ip2" id="ip2"/><br>
+                    Chest Pain:<input type="text" name="ip3" id="ip3"/><br>
+                    Resting Blood Pressure:<input type="text" name="ip4" id="ip4"/><br>
+                    Serum Cholestrol:<input type="text" name="ip5" id="ip5"/><br>
+                    Fasting Blood Sugar:<input type="text" name="ip6" id="ip6"/><br>
+                    Resting Electrocardiographic Result:<input type="text" name="ip7" id="ip7"/><br>
+                    Max heart rate achieved:<input type="text" name="ip8" id="ip8"/><br>
+                    Exercise induced angina:<input type="text" name="ip9" id="ip9"/><br>
+                    oldpeak:<input type="text" name="ip10" id="ip10"/><br>
+                    the slope of peak exercise:<input type="text" name="ip11" id="ip11"/><br>
+                    Major vessels colored by flourosopy:<input type="text" name="ip12" id="ip12"/><br>
+                    Thal:<input type="text" name="ip13" id="ip13"/><br>
+
+                </textarea>
+                </div>
+
+
+
+                <div class="col-md-1 text-center ver-centr">
+                    <input class="vertical-center" id="clk" type="button" value="Predict" />
+                </div>
+                <div class="col-md-4">
+                    <h3 id="txt_area"> </h3>
+                    <img id="meow" src="{{ url_for('static', filename='animal_photos/animal.gif') }}" alt="O" style="display:none">
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+</body>
+
+</html>
